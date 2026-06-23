@@ -84,7 +84,7 @@ section {
     align-items: center;
     text-align: center;
     background: linear-gradient(rgba(15,32,39,0.8), rgba(44,83,100,0.8)),
-    url("images/hero.jpg");
+    url("hero.jpg");
     background-size: cover;
     color: white;
 }
@@ -99,6 +99,7 @@ section {
     background: #00adb5;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 /* Services */
@@ -231,7 +232,6 @@ section {
     border-radius: 15px;
     transition: 0.3s;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    position: relative;
 }
 
 .testimonial-card:hover {
@@ -277,6 +277,7 @@ section {
     background: #00adb5;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -288,17 +289,14 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
-    /* Sidebar becomes top navbar style */
     .sidebar {
         position: relative;
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         padding-bottom: 10px;
     }
 
@@ -306,20 +304,16 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0;
     }
 
     .sidebar ul li {
         padding: 10px 15px;
     }
 
-    /* Main section fix */
     .main {
         margin-left: 0;
-        width: 100%;
     }
 
-    /* Hero text fix */
     .hero h1 {
         font-size: 28px;
         padding: 0 10px;
@@ -330,10 +324,8 @@ footer {
         padding: 0 10px;
     }
 
-    /* About section fix */
     .about-container {
         flex-direction: column;
-        text-align: center;
     }
 
     .about-text,
@@ -345,12 +337,6 @@ footer {
         height: auto;
     }
 
-    /* Contact form */
-    .contact-form {
-        width: 90%;
-    }
-
-    /* Fix spacing */
     section {
         padding: 50px 0;
     }
@@ -359,7 +345,6 @@ footer {
         padding: 0 20px;
     }
 
-    /* Make images responsive */
     img {
         max-width: 100%;
         height: auto;
